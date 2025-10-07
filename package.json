@@ -4,7 +4,7 @@
   "description": "Codex-powered Agent Client Protocol bridge for Zed IDE",
   "type": "module",
   "bin": {
-    "codex-acp-agent": "./dist/bin.js"
+    "codex-acp-agent": "dist/bin.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

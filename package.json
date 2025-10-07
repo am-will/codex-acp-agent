@@ -1,0 +1,31 @@
+{
+  "name": "@zed-industries/codex-acp-agent",
+  "version": "0.1.0",
+  "description": "Codex-powered Agent Client Protocol bridge for Zed IDE",
+  "type": "module",
+  "bin": {
+    "codex-acp-agent": "./dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "dev": "tsx src/bin.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit --project tsconfig.json"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "^0.45.0",
+    "@zed-industries/agent-client-protocol": "^0.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

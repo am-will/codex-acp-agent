@@ -1,6 +1,6 @@
 # Codex ACP Agent
 
-This repository packages the Codex ↔ Agent Client Protocol adapter for Zed as a standalone Node.js project. It is the official Codex adapter and is not affiliated with, endorsed by, or sponsored by OpenAI or Zed Industries. The package wraps the Codex SDK with the ACP transport so Zed can talk to Codex over stdio.
+This repository packages the Codex ↔ Agent Client Protocol adapter for Zed as a standalone Node.js project. It is the not official Codex adapter and is not affiliated with, endorsed by, or sponsored by OpenAI or Zed Industries. The package wraps the Codex SDK with the ACP transport so Zed can talk to Codex over stdio.
 
 ## Prerequisites
 
@@ -22,12 +22,7 @@ This repository packages the Codex ↔ Agent Client Protocol adapter for Zed as 
    ```
    Every install or publish will also run this automatically via the `prepare` script.
 
-3. (Optional) Run unit tests:
-   ```bash
-   npm test
-   ```
-
-4. Choose your Codex authentication path:
+3. Choose your Codex authentication path:
    ```bash
    # Interactive device-login flow
    npx codex login
